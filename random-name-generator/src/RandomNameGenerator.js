@@ -5,7 +5,7 @@ const RandomNameGenerator = () => {
   const [randomName, setRandomName] = useState("");
   const [animationKey, setAnimationKey] = useState(0);
 
-  const names = ["大吉", "吉", "中吉", "小吉", "末吉", "凶", "大凶"];
+  const names = ["ウルトラGOD吉","ハイパー吉","スーパー吉","大吉", "吉", "中吉", "小吉", "末吉", "凶", "大凶","超大凶","スーパーメガ大凶"];
 
   const generateRandomName = () => {
     const randomIndex = Math.floor(Math.random() * names.length);
