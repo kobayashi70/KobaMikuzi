@@ -39,7 +39,7 @@
 
 .wrap {
   width: 100%;
-  height: 300px;
+  height: 750px;
   background: linear-gradient(
     45deg,
     #ebee44,
@@ -114,8 +114,7 @@
 }
 
 .kekka {
-  margin: 0;
-  margin-top: 30px;
+  margin-top: 30px auto;
   display: inline-block;
   background: linear-gradient(
     90deg,
@@ -141,4 +140,40 @@
   -webkit-text-stroke: 0.8px #333;
 
   animation: fontSizeAnimation 0.5s ease-in-out;
+}
+
+.kekka-wrap {
+  height: 200px;
+}
+
+.list-wrap {
+  margin: 0 auto;
+  width: 250px;
+}
+
+ul {
+  color: #333;
+  border: double 5px rgb(88, 88, 88);
+  background: #f1f8ff;
+  padding: 8px;
+  background: rgba(247, 221, 173, 0.589);
+}
+
+li {
+  list-style: none;
+  line-height: 1.3;
+  width: 250px;
+}
+
+.list-rank {
+  display: flex;
+  gap: 50px;
+}
+
+.list-rank-x {
+  gap: 93px;
+}
+
+.list-color {
+  color: rgb(250, 108, 26);
 }
