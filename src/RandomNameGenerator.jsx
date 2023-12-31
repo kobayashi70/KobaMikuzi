@@ -31,15 +31,31 @@ const RandomNameGenerator = () => {
     }, 100);
   };
 
+  const getResultClass = (result) => {
+    if (result.includes("ウルトラGOD吉") || result.includes("ハイパー吉") || result.includes("スーパー吉") || result.includes("大吉")) {
+      return "result-ultra-good";
+    } else if (result.includes("凶") || result.includes("大凶") || result.includes("超大凶") || result.includes("スーパーメガ大凶")) {
+      return "result-ultra-bad";
+    } else {
+      return "result-neutral";
+    }
+  };
+  
+
   return (
     <div className="wrap">
       <h1 className="title">おみくじ</h1>
       <div className="in-wrap">
-        <button onClick={generateRandomName} className="btn">
+        {/* <button onClick={generateRandomName} className="btn">
           ここをクリック！
-        </button>
+        </button> */}
+        <img 
+              src="/omikuji.png" 
+              alt="ここをクリック"
+              onClick={generateRandomName}
+              className="btn"/>
         <div className="kekka-wrap">
-          <p key={animationKey} className={`kekka show`}>
+          <p key={animationKey} className={`kekka show ${getResultClass(randomName)}`}>
             {randomName}
           </p>
         </div>
